@@ -1,0 +1,30 @@
+{
+    "scripts": {
+        "build": "webpack",
+        "build:esm": "webpack --config webpack.config.esm.js",
+        "prepublishOnly": "npm run build"
+    },
+    "name": "vue-bar-chart",
+    "version": "1.0.0",
+    "description": "A customizable bar chart component for Vue.js",
+    "main": "dist/bar-chart.umd.js",
+    "module": "dist/bar-chart.esm.js",
+    "keywords": [
+        "vue",
+        "component",
+        "chart",
+        "bar",
+        "data",
+        "visualization"
+    ],
+    "license": "MIT",
+    "author": "lirankor",
+    "devDependencies": {
+        "vue-loader": "^17.4.2",
+        "webpack": "^5.92.1",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "vue": "^3.4.31"
+    }
+}
